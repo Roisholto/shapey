@@ -46,7 +46,7 @@
 
       <v-spacer />
 
-      <div>
+      <div class="mr-2">
         <span class="body-2">Stroke : </span>
         <ColorPicker v-model="data.stroke"/>
       </div>
@@ -57,6 +57,7 @@
         label="Name"
         style="max-width:130px"
         hide-details
+        class="mr-2"
         />
 
       <SaveShape :value="save_data"/>
@@ -174,7 +175,7 @@ export default {
       let r ;
 
       for (const entry of entries) {
-        // console.log('entry', entry) ;
+        // ('entry', entry) ;
         vm.height = entry.contentRect.height - 10;
         vm.width = entry.contentRect.width - 10;
       }

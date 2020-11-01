@@ -90,10 +90,8 @@ export default {
   mounted(){
     let vm  = this
     historyStorage.on('ready', function(){
-      console.log('db ready')
       historyStorage.history.toCollection().toArray()
         .then(function(v){
-          console.log('history', v)
           vm.$store.commit('setHistory', v) ;
         })
         .catch(function(e){

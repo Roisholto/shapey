@@ -13,7 +13,7 @@
 
       <v-spacer />
 
-      <div>
+      <div class="mr-2">
         <span class="body-2">Stroke : </span>
         <ColorPicker v-model="data.stroke"/>
       </div>

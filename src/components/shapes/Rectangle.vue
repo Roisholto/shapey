@@ -31,17 +31,20 @@
       </div>
       <v-spacer />
 
-      <div>
+      <div class="mr-2">
         <span class="body-2">Stroke : </span>
         <ColorPicker v-model="data.stroke"/>
       </div>
+
       <v-text-field
         v-model="data.name"
         solo dense
         label="Name"
         style="max-width:130px"
         hide-details
+        class="mr-2"
         />
+
       <SaveShape :value="save_data"/>
     </div>
     <div class="my-2"></div>
@@ -141,7 +144,6 @@ export default {
     const resizeObserver = new ResizeObserver(entries => {
       let boxSize;
       for (const entry of entries) {
-        console.log('entry', entry) ;
         vm.max_l = entry.contentRect.height - 10;
         vm.max_b = entry.contentRect.width - 10;
         /*

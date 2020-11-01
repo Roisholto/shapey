@@ -1,7 +1,8 @@
 <template>
   <div class="">
-    <v-btn icon color="primary" rounded :loading="saving" @click="save">
-      <v-icon>
+    <v-btn small color="primary" rounded :loading="saving" @click="save">
+      Save
+      <v-icon class="ml-2">
         mdi-check
       </v-icon>
     </v-btn>
@@ -46,7 +47,7 @@ export default {
 
       historyStorage.history.put(data)
         .then(function(i){
-          console.log('saved')
+
         })
         .catch(function(e){
           console.log('Error saving', e) ;
