@@ -1,6 +1,11 @@
 # shape_creator
 
+A single page application which draws shapes using SVG.
+
+
+
 ## Project setup
+
 ```
 yarn install
 ```
